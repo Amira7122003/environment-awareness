@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Environmental Awareness - Learn about protecting our planet and making eco-friendly choices for a sustainable future.">
+    <title>EcoAware | Protect Our Environment</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVIGATION BAR
+         Fixed sticky nav with logo, links, dark mode toggle, hamburger
+    ============================================================ -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="#home" class="nav-logo" aria-label="EcoAware Home">
+                <i class="fas fa-leaf" aria-hidden="true"></i>
+                <span data-i18n="brand.name">EcoAware</span>
+            </a>
+
+            <!-- Nav Menu Links -->
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#home"       class="nav-link" role="menuitem" data-i18n="nav.home">Home</a></li>
+                <li role="none"><a href="#about"      class="nav-link" role="menuitem" data-i18n="nav.about">About</a></li>
+                <li role="none"><a href="#problems"   class="nav-link" role="menuitem" data-i18n="nav.problems">Problems</a></li>
+                <li role="none"><a href="#solutions"  class="nav-link" role="menuitem" data-i18n="nav.solutions">Solutions</a></li>
+                <li role="none"><a href="#statistics" class="nav-link" role="menuitem" data-i18n="nav.stats">Stats</a></li>
+                <li role="none"><a href="#tips"       class="nav-link" role="menuitem" data-i18n="nav.tips">Tips</a></li>
+                <li role="none"><a href="#videos"     class="nav-link" role="menuitem" data-i18n="nav.videos">Videos</a></li>
+                <li role="none"><a href="#quiz"       class="nav-link" role="menuitem" data-i18n="nav.quiz">Quiz</a></li>
+                <li role="none"><a href="#contact"    class="nav-link" role="menuitem" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+
+            <!-- Nav Actions: Language + Dark Mode + Hamburger -->
+            <div class="nav-actions">
+                <!-- Arabic / English language toggle -->
+                <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language / تبديل اللغة">
+                    <span class="lang-toggle-en" id="langToggleEn">EN</span><span class="lang-toggle-sep" aria-hidden="true"> | </span><span class="lang-toggle-ar" id="langToggleAr">العربية</span>
+                </button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="themeIcon" aria-hidden="true"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ============================================================
+         HERO SECTION
+         Full-viewport, parallax background, headline + CTAs
+    ============================================================ -->
+    <section class="hero" id="home" aria-label="Hero">
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-content fade-in">
+            <span class="hero-badge" data-i18n="hero.badge">🌿 Join the Movement</span>
+
+            <h1 class="hero-title">
+                <span data-i18n="hero.titlePrefix">Protect Our</span> <span class="highlight" data-i18n="hero.titleHighlight">Environment</span>
+            </h1>
+
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+                Every action counts. Together we can preserve the beauty of our planet
+                for future generations. Start your journey to a greener tomorrow today.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">
+                    <i class="fas fa-arrow-down" aria-hidden="true"></i> <span data-i18n="hero.learnMore">Learn More</span>
+                </a>
+                <a href="#quiz" class="btn btn-outline">
+                    <i class="fas fa-question-circle" aria-hidden="true"></i> <span data-i18n="hero.takeQuiz">Take the Quiz</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Animated scroll hint -->
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         ABOUT SECTION
+         What is environmental awareness + feature icons
+    ============================================================ -->
+    <section class="about section" id="about" aria-labelledby="about-title">
+        <div class="container">
+
+            <div class="section-header fade-in">
+                <!-- <span class="section-badge" data-i18n="about.badge">About Us</span> -->
+                <h2 class="section-title" id="about-title" data-i18n="about.title">What is Environmental Awareness?</h2>
+                <p class="section-subtitle" data-i18n="about.subtitle">Understanding our impact on the planet is the first step to change</p>
+            </div>
+
+            <div class="about-grid">
+
+                <!-- Image Column -->
+                <div class="about-image fade-in">
+                    <img
+                        src="images/about/environment_awareness.jpeg"
+                        alt="Sunlit forest path representing the beauty of nature we must protect"
+                        loading="lazy">
+                    <div class="about-image-badge">
+                        <i class="fas fa-globe-americas" aria-hidden="true"></i>
+                        <span data-i18n="about.imageBadge">Our Planet Needs You</span>
+                    </div>
+                </div>
+
+                <!-- Text Column -->
+                <div class="about-content fade-in">
+                    <p class="about-text" data-i18n="about.text1">
+                        Environmental awareness refers to the understanding and consciousness of
+                        environmental challenges and the impact of human activities on the natural world.
+                        It encompasses knowledge about ecological systems, pollution, climate change,
+                        and sustainable practices.
+                    </p>
+                    <p class="about-text" data-i18n="about.text2">
+                        By becoming environmentally aware, individuals can make informed choices
+                        that reduce their ecological footprint and contribute to a healthier planet
+                        for all living beings — now and for generations to come.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-seedling" aria-hidden="true"></i>
+                            <div>
+                                <h4 data-i18n="about.feature1Title">Sustainable Living</h4>
+                                <p data-i18n="about.feature1Desc">Adopt eco-friendly habits in daily life</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-recycle" aria-hidden="true"></i>
+                            <div>
+                                <h4 data-i18n="about.feature2Title">Responsible Consumption</h4>
+                                <p data-i18n="about.feature2Desc">Reduce, reuse, and recycle resources</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            <div>
+                                <h4 data-i18n="about.feature3Title">Community Action</h4>
+                                <p data-i18n="about.feature3Desc">Work together for environmental protection</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-book-open" aria-hidden="true"></i>
+                            <div>
+                                <h4 data-i18n="about.feature4Title">Education & Awareness</h4>
+                                <p data-i18n="about.feature4Desc">Spread knowledge about environmental issues</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+           
+
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         ENVIRONMENTAL PROBLEMS SECTION
+         5 animated problem cards with icons and statistics
+    ============================================================ -->
+    <section class="problems section section-alt" id="problems" aria-labelledby="problems-title">
+        <div class="container">
+
+            <div class="section-header fade-in">
+                <span class="section-badge" data-i18n="problems.badge">Challenges</span>
+                <h2 class="section-title" id="problems-title" data-i18n="problems.title">Environmental Problems We Face</h2>
+                <p class="section-subtitle" data-i18n="problems.subtitle">Understanding these challenges is the key to finding lasting solutions</p>
+            </div>
+
+            <div class="cards-grid">
+
+                <!-- Air Pollution -->
+                <article class="problem-card fade-in">
+                    <div class="card-img">
+                        <img src="images/problems/air_ pollution.jpeg"
+                             alt="Smoggy city skyline caused by air pollution" loading="lazy">
+                    </div>
+                    <div class="card-icon air">
+                        <i class="fas fa-smog" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="problems.air.title">Air Pollution</h3>
+                    <p data-i18n="problems.air.desc">Toxic gases and particles released by vehicles and industries contaminate the air we breathe, causing respiratory diseases and accelerating climate change.</p>
+                    <div class="card-stat"><span>7M</span> <span data-i18n="problems.air.stat">deaths / year</span></div>
+                </article>
+
+                <!-- Water Pollution -->
+                <article class="problem-card fade-in">
+                    <div class="card-img">
+                        <img src="images/problems/water_pollution.jpeg"
+                             alt="Ocean waves representing threatened marine ecosystems" loading="lazy">
+                    </div>
+                    <div class="card-icon water">
+                        <i class="fas fa-water" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="problems.water.title">Water Pollution</h3>
+                    <p data-i18n="problems.water.desc">Industrial waste, agricultural runoff, and plastic dumping contaminate rivers, lakes, and oceans, threatening marine life and human health worldwide.</p>
+                    <div class="card-stat"><span>2B</span> <span data-i18n="problems.water.stat">lack clean water</span></div>
+                </article>
+
+                <!-- Plastic Waste -->
+                <article class="problem-card fade-in">
+                    <div class="card-img">
+                        <img src="images/problems/plastic_waste.jpeg"
+                             alt="Plastic bottles and waste sorted for recycling" loading="lazy">
+                    </div>
+                    <div class="card-icon plastic">
+                        <i class="fas fa-trash" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="problems.plastic.title">Plastic Waste</h3>
+                    <p data-i18n="problems.plastic.desc">Millions of tons of plastic enter our environment each year, breaking down into microplastics that contaminate soil, water sources, and the food chain.</p>
+                    <div class="card-stat"><span>8M</span> <span data-i18n="problems.plastic.stat">tons in oceans / yr</span></div>
+                </article>
+
+                <!-- Climate Change -->
+                <article class="problem-card fade-in">
+                    <div class="card-img">
+                        <img src="images/problems/climate_change.jpeg"
+                             alt="Melting arctic landscape showing the impact of climate change" loading="lazy">
+                    </div>
+                    <div class="card-icon climate">
+                        <i class="fas fa-temperature-high" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="problems.climate.title">Climate Change</h3>
+                    <p data-i18n="problems.climate.desc">Rising global temperatures caused by greenhouse gases are producing extreme weather events, melting ice caps, and rising sea levels that threaten coastlines.</p>
+                    <div class="card-stat"><span>1.1°C</span> <span data-i18n="problems.climate.stat">avg. temp rise</span></div>
+                </article>
+
+                <!-- Deforestation -->
+                <article class="problem-card fade-in">
+                    <div class="card-img">
+                        <img src="images/problems/deforestation.jpeg"
+                             alt="Dense forest that faces the threat of deforestation" loading="lazy">
+                    </div>
+                    <div class="card-icon forest">
+                        <i class="fas fa-tree" aria-hidden="true"></i>
+                    </div>
+                    <h3 data-i18n="problems.forest.title">Deforestation</h3>
+                    <p data-i18n="problems.forest.desc">Forests are cleared at alarming rates for agriculture and development, destroying biodiversity, disrupting ecosystems, and releasing massive amounts of stored carbon.</p>
+                    <div class="card-stat"><span>15B</span> <span data-i18n="problems.forest.stat">trees cut / year</span></div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         SOLUTIONS SECTION
+         5 solution cards with tips list
+    ============================================================ -->
+    <section class="solutions section" id="solutions" aria-labelledby="solutions-title">
+        <div class="container">
+
+            <div class="section-header fade-in">
+                <span class="section-badge" data-i18n="solutions.badge">Solutions</span>
+                <h2 class="section-title" id="solutions-title" data-i18n="solutions.title">What We Can Do</h2>
+                <p class="section-subtitle" data-i18n="solutions.subtitle">Small changes in our daily habits can create massive positive impact for our planet</p>
+            </div>
+
+            <div class="solutions-grid">
+
+                <!-- Recycling -->
+                <article class="solution-card fade-in">
+                    <div class="card-img">
+                        <img src="images/solutions/recycling.jpg"
+                             alt="Colorful recycling bins with sorted materials" loading="lazy">
+                    </div>
+                    <div class="solution-icon"><i class="fas fa-recycle" aria-hidden="true"></i></div>
+                    <h3 data-i18n="solutions.recycling.title">Recycling</h3>
+                    <p data-i18n="solutions.recycling.desc">Sort and recycle waste materials to reduce landfill waste and conserve natural resources. Every bottle, can, and paper sheet counts toward a cleaner future.</p>
+                    <ul class="solution-tips">
+                        <li data-i18n="solutions.recycling.tip1">Separate recyclables from regular trash</li>
+                        <li data-i18n="solutions.recycling.tip2">Use recycling bins at home and work</li>
+                        <li data-i18n="solutions.recycling.tip3">Buy products made with recycled content</li>
+                    </ul>
+                </article>
+
+                <!-- Saving Water -->
+                <article class="solution-card fade-in">
+                    <div class="card-img">
+                        <img src="images/solutions/saving_water.jpeg"
+                             alt="Clear fresh water representing the importance of water conservation" loading="lazy">
+                    </div>
+                    <div class="solution-icon"><i class="fas fa-tint" aria-hidden="true"></i></div>
+                    <h3 data-i18n="solutions.water.title">Saving Water</h3>
+                    <p data-i18n="solutions.water.desc">Conserve water through mindful usage and quickly fixing leaks. Fresh water is a precious and limited resource that demands our protection every single day.</p>
+                    <ul class="solution-tips">
+                        <li data-i18n="solutions.water.tip1">Take shorter showers (5 min target)</li>
+                        <li data-i18n="solutions.water.tip2">Fix leaky faucets promptly</li>
+                        <li data-i18n="solutions.water.tip3">Collect rainwater for garden plants</li>
+                    </ul>
+                </article>
+
+                <!-- Planting Trees -->
+                <article class="solution-card fade-in">
+                    <div class="card-img">
+                        <img src="images/solutions/planting_trees.jpeg"
+                             alt="Lush green forest representing successful reforestation" loading="lazy">
+                    </div>
+                    <div class="solution-icon"><i class="fas fa-seedling" aria-hidden="true"></i></div>
+                    <h3 data-i18n="solutions.trees.title">Planting Trees</h3>
+                    <p data-i18n="solutions.trees.desc">Trees absorb CO₂, produce oxygen, and provide vital habitat for wildlife. Planting trees is one of the most effective and accessible ways to fight climate change.</p>
+                    <ul class="solution-tips">
+                        <li data-i18n="solutions.trees.tip1">Plant native trees in your yard</li>
+                        <li data-i18n="solutions.trees.tip2">Join local community planting events</li>
+                        <li data-i18n="solutions.trees.tip3">Support reforestation organisations</li>
+                    </ul>
+                </article>
+
+                <!-- Renewable Energy -->
+                <article class="solution-card fade-in">
+                    <div class="card-img">
+                        <img src="images/solutions/renewable_energy.jpeg"
+                             alt="Solar panel field generating clean renewable energy" loading="lazy">
+                    </div>
+                    <div class="solution-icon"><i class="fas fa-solar-panel" aria-hidden="true"></i></div>
+                    <h3 data-i18n="solutions.renewable.title">Renewable Energy</h3>
+                    <p data-i18n="solutions.renewable.desc">Switching to solar, wind, and other renewable sources reduces dependence on fossil fuels and cuts greenhouse gas emissions that drive climate change significantly.</p>
+                    <ul class="solution-tips">
+                        <li data-i18n="solutions.renewable.tip1">Install solar panels at home</li>
+                        <li data-i18n="solutions.renewable.tip2">Choose a green energy provider</li>
+                        <li data-i18n="solutions.renewable.tip3">Use energy-efficient appliances</li>
+                    </ul>
+                </article>
+
+                <!-- Reducing Plastic -->
+                <article class="solution-card fade-in">
+                    <div class="card-img">
+                        <img src="images/solutions/reducing_plastic.jpg"
+                             alt="Wind turbines as a clean alternative that reduces plastic production" loading="lazy">
+                    </div>
+                    <div class="solution-icon"><i class="fas fa-ban" aria-hidden="true"></i></div>
+                    <h3 data-i18n="solutions.reducePlastic.title">Reducing Plastic</h3>
+                    <p data-i18n="solutions.reducePlastic.desc">Single-use plastics are a major environmental hazard. Reducing plastic consumption protects our oceans, wildlife, and the entire food chain from contamination.</p>
+                    <ul class="solution-tips">
+                        <li data-i18n="solutions.reducePlastic.tip1">Use reusable bags, cups, and bottles</li>
+                        <li data-i18n="solutions.reducePlastic.tip2">Refuse single-use plastic items</li>
+                        <li data-i18n="solutions.reducePlastic.tip3">Choose plastic-free packaging</li>
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         STATISTICS SECTION
+         Dark green background with animated JS counters
+    ============================================================ -->
+    <section class="statistics section section-dark" id="statistics" aria-labelledby="stats-title">
+        <div class="container">
+
+            <div class="section-header fade-in">
+                <span class="section-badge light" data-i18n="statistics.badge">Our Impact</span>
+                <h2 class="section-title light" id="stats-title" data-i18n="statistics.title">Environmental Statistics</h2>
+                <p class="section-subtitle light" data-i18n="statistics.subtitle">Numbers that show why we must act — and why our actions matter</p>
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card fade-in">
+                    <div class="stat-icon"><i class="fas fa-tree" aria-hidden="true"></i></div>
+                    <div class="stat-number" data-target="2500000" data-suffix="+" data-suffix-key="statistics.trees.suffix">0</div>
+                    <div class="stat-label" data-i18n="statistics.trees.label">Trees Planted</div>
+                    <div class="stat-desc" data-i18n="statistics.trees.desc">Through global reforestation efforts</div>
+                </div>
+
+                <div class="stat-card fade-in">
+                    <div class="stat-icon"><i class="fas fa-recycle" aria-hidden="true"></i></div>
+                    <div class="stat-number" data-target="850000" data-suffix="kg" data-suffix-key="statistics.plastic.suffix">0</div>
+                    <div class="stat-label" data-i18n="statistics.plastic.label">Plastic Recycled</div>
+                    <div class="stat-desc" data-i18n="statistics.plastic.desc">Diverted from landfills and oceans</div>
+                </div>
+
+                <div class="stat-card fade-in">
+                    <div class="stat-icon"><i class="fas fa-wind" aria-hidden="true"></i></div>
+                    <div class="stat-number" data-target="320000" data-suffix="t" data-suffix-key="statistics.co2.suffix">0</div>
+                    <div class="stat-label" data-i18n="statistics.co2.label">CO₂ Reduced</div>
+                    <div class="stat-desc" data-i18n="statistics.co2.desc">Tons of emissions prevented</div>
+                </div>
+
+                <div class="stat-card fade-in">
+                    <div class="stat-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+                    <div class="stat-number" data-target="125000" data-suffix="+" data-suffix-key="statistics.warriors.suffix">0</div>
+                    <div class="stat-label" data-i18n="statistics.warriors.label">Eco Warriors</div>
+                    <div class="stat-desc" data-i18n="statistics.warriors.desc">People committed to positive change</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         TIPS SECTION
+         6 daily eco-friendly habit cards
+    ============================================================ -->
+    <section class="tips section section-alt" id="tips" aria-labelledby="tips-title">
+        <div class="container">
+
+            <div class="section-header fade-in">
+                <span class="section-badge" data-i18n="tips.badge">Daily Habits</span>
+                <h2 class="section-title" id="tips-title" data-i18n="tips.title">Eco-Friendly Tips</h2>
+                <p class="section-subtitle" data-i18n="tips.subtitle">Simple actions you can take every day to help protect our environment</p>
+            </div>
+
+            <div class="tips-grid">
+
+                <article class="tip-card fade-in">
+                    <span class="tip-number" aria-hidden="true">01</span>
+                    <i class="fas fa-walking tip-icon" aria-hidden="true"></i>
+                    <h3 data-i18n="tips.walk.title">Walk or Cycle</h3>
+                    <p data-i18n="tips.walk.desc">Choose walking or cycling for short trips instead of driving. This reduces carbon emissions and improves your cardiovascular health at the same time.</p>
+                </article>
+
+                <article class="tip-card fade-in">
+                    <span class="tip-number" aria-hidden="true">02</span>
+                    <i class="fas fa-lightbulb tip-icon" aria-hidden="true"></i>
+                    <h3 data-i18n="tips.energy.title">Save Energy</h3>
+                    <p data-i18n="tips.energy.desc">Turn off lights and unplug electronics when not in use. Switch to LED bulbs — they use up to 80% less energy than traditional incandescent bulbs.</p>
+                </article>
+
+                <article class="tip-card fade-in">
+                    <span class="tip-number" aria-hidden="true">03</span>
+                    <i class="fas fa-leaf tip-icon" aria-hidden="true"></i>
+                    <h3 data-i18n="tips.plant.title">Eat Plant-Based</h3>
+                    <p data-i18n="tips.plant.desc">Reduce meat consumption and eat more plant-based foods. Animal agriculture is responsible for nearly 15% of global greenhouse gas emissions.</p>
+                </article>
+
+                <article class="tip-card fade-in">
+                    <span class="tip-number" aria-hidden="true">04</span>
+                    <i class="fas fa-shopping-bag tip-icon" aria-hidden="true"></i>
+                    <h3 data-i18n="tips.shop.title">Shop Sustainably</h3>
+                    <p data-i18n="tips.shop.desc">Buy second-hand items, choose eco-friendly products, and support businesses with sustainable practices, ethical sourcing, and minimal packaging.</p>
+                </article>
+
+                <article class="tip-card fade-in">
+                    <span class="tip-number" aria-hidden="true">05</span>
+                    <i class="fas fa-shower tip-icon" aria-hidden="true"></i>
+                    <h3 data-i18n="tips.water.title">Conserve Water</h3>
+                    <p data-i18n="tips.water.desc">Take shorter showers, turn off taps while brushing teeth, and water plants during cooler times of day to minimise evaporation and conserve precious freshwater.</p>
+                </article>
+
+                <article class="tip-card fade-in">
+                    <span class="tip-number" aria-hidden="true">06</span>
+                    <i class="fas fa-share-alt tip-icon" aria-hidden="true"></i>
+                    <h3 data-i18n="tips.share.title">Spread Awareness</h3>
+                    <p data-i18n="tips.share.desc">Share environmental knowledge with friends, family, and on social media. Educating others multiplies our collective positive impact exponentially.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         FEATURED VIDEOS SECTION
+         Thumbnail cards that open YouTube in a new tab.
+         (Iframes are blocked by browsers on file:// — thumbnails
+          always work and look just as professional.)
+    ============================================================ -->
+    <section class="videos-section section" id="videos" aria-labelledby="videos-title">
+        <div class="container">
+
+            <div class="section-header fade-in">
+                <span class="section-badge" data-i18n="videos.badge">Watch &amp; Learn</span>
+                <h2 class="section-title" id="videos-title" data-i18n="videos.title">Featured Videos</h2>
+                <p class="section-subtitle" data-i18n="videos.subtitle">Learn from leading voices in environmental education and action</p>
+            </div>
+
+            <div class="videos-grid">
+
+                <!-- Video 1: Environmental Awareness -->
+                <a href="https://www.youtube.com/watch?v=EtW2rrLHs08"
+                   target="_blank" rel="noopener noreferrer"
+                   class="video-card fade-in"
+                   aria-label="Watch Climate Change 101 with Bill Nye on YouTube">
+                    <div class="video-thumb">
+                        <img src="images/problems/climate_change.jpeg"
+                             alt="Climate Change 101 with Bill Nye thumbnail" loading="lazy">
+                        <div class="video-play-btn" aria-hidden="true">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag"><i class="fas fa-globe-americas" aria-hidden="true"></i> <span data-i18n="videos.tag1">Environmental Awareness</span></span>
+                        <h3 data-i18n="videos.video1.title">Climate Change 101 with Bill Nye</h3>
+                        <p data-i18n="videos.video1.desc">National Geographic breaks down the causes and effects of climate change with engaging visuals and expert commentary.</p>
+                        <span class="video-watch-link" data-i18n="videos.watchLink">Watch on YouTube <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+                    </div>
+                </a>
+
+                <!-- Video 2: Recycling -->
+                <a href="https://youtu.be/BAyLz8bv11I?si=nOBzI_0eFlGBrCc8"
+                   target="_blank" rel="noopener noreferrer"
+                   class="video-card fade-in"
+                   aria-label="Watch How Plastic Recycling Really Works on YouTube">
+                    <div class="video-thumb">
+                        <img src="images/solutions/recycling.jpg"
+                             alt="How Plastic Recycling Really Works thumbnail" loading="lazy">
+                        <div class="video-play-btn" aria-hidden="true">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag"><i class="fas fa-recycle" aria-hidden="true"></i> <span data-i18n="videos.tag2">Recycling</span></span>
+                        <h3 data-i18n="videos.video2.title">How Plastic Recycling Really Works</h3>
+                        <p data-i18n="videos.video2.desc">Discover the full journey of recycled plastics — from collection to processing — and learn how smarter habits help.</p>
+                        <span class="video-watch-link" data-i18n="videos.watchLink">Watch on YouTube <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+                    </div>
+                </a>
+
+                <!-- Video 3: Climate Change -->
+                <a href="https://www.youtube.com/watch?v=G4H1N_yXBiA"
+                   target="_blank" rel="noopener noreferrer"
+                   class="video-card fade-in"
+                   aria-label="Watch Climate 101: Cause and Effect on YouTube">
+                    <div class="video-thumb">
+                        <img src="images/problems/air_ pollution.jpeg"
+                             alt="Climate 101: Cause and Effect thumbnail" loading="lazy">
+                        <div class="video-play-btn" aria-hidden="true">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag"><i class="fas fa-temperature-high" aria-hidden="true"></i> <span data-i18n="videos.tag3">Climate Change</span></span>
+                        <h3 data-i18n="videos.video3.title">Climate 101: Cause and Effect</h3>
+                        <p data-i18n="videos.video3.desc">An in-depth look at the primary drivers of climate change, cascading effects on ecosystems, and what we can do now.</p>
+                        <span class="video-watch-link" data-i18n="videos.watchLink">Watch on YouTube <i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         QUIZ SECTION
+         5-question interactive multiple-choice quiz with scoring
+    ============================================================ -->
+    <section class="quiz-section section" id="quiz" aria-labelledby="quiz-title">
+        <div class="container">
+
+            <div class="section-header fade-in">
+                <span class="section-badge" data-i18n="quiz.badge">Test Yourself</span>
+                <h2 class="section-title" id="quiz-title" data-i18n="quiz.title">Environmental Awareness Quiz</h2>
+                <p class="section-subtitle" data-i18n="quiz.subtitle">How much do you know about protecting our planet? Find out now!</p>
+            </div>
+
+            <div class="quiz-container fade-in" role="main" aria-live="polite">
+
+                <!-- Progress Indicator -->
+                <div class="quiz-progress">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressText">Question 1 of 5</span>
+                </div>
+
+                <!-- Quiz questions injected by JS -->
+                <div id="quizContent"></div>
+
+                <!-- Result screen (hidden until quiz complete) -->
+                <div class="quiz-result" id="quizResult" style="display:none;" aria-label="Quiz results">
+                    <div class="result-icon" id="resultIcon" aria-hidden="true"></div>
+                    <h3 id="resultTitle" data-i18n="quiz.complete">Quiz Complete!</h3>
+                    <p id="resultMessage"></p>
+                    <div class="score-display">
+                        <span id="scoreDisplay">0</span><span id="scoreOutOf" data-i18n="quiz.outOf">/ 5</span>
+                    </div>
+                    <button class="btn btn-primary" id="retakeBtn">
+                        <i class="fas fa-redo" aria-hidden="true"></i> <span data-i18n="quiz.retake">Retake Quiz</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     
+    <!-- ============================================================
+         CONTACT SECTION
+         Form with JS validation, no backend required
+    ============================================================ -->
+    <section class="contact section section-alt" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <!-- ── Meet the Creators ── -->
+            <div class="creators-section fade-in">
+                <h3 class="creators-heading" data-i18n="about.creatorsHeading">Meet the Creators</h3>
+
+                <div class="creators-grid">
+
+                    <!-- Creator 1: Amira Mahmoud -->
+                    <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/amira.jpeg"
+                                alt="Profile photo of Amira Mahmoud"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user1">Amira Mahmoud</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:amira.mahmoud@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Amira Mahmoud">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>amira.mahmoud@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information System</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Creator 2: Bassmala -->
+                     <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/basmal.jpeg"
+                                alt="Profile photo of Bassmala Mahmoud"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user2">Bassmala Essam</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:bassmala.essam@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Bassmala Essam">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>bassmala.essam@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Creator 3: Amal -->
+                      <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/amal.jpeg"
+                                alt="Profile photo of Amal Khaled"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user3">Amal Khaled</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:amal.khaled@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Amal Khaled">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>amal.khaled@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                  <!-- Creator 4: Eman -->
+                     <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/eman.jpeg"
+                                alt="Profile photo of Eman Sayed"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user4">Eman Sayed</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:eman.sayed@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Eman Sayed">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>eman.sayed@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Creator 5: Mahmoud Mohsen -->
+                       <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/mahmoud.jpeg"
+                                alt="Profile photo of Mahmoud Mohsen"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user5">Mahmoud Mohsen</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:mahmoud,mohsen@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Mahmoud Mohsen">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>mahmoud.mohsen@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Creator 6: Mahmoud Mohamed -->
+                       <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/mahmoud.jpeg"
+                                alt="Profile photo of Mahmoud Mohamed"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user6">Mahmoud Mohamed</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:mahmoud.mohamed@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Bassmala Essam">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>mahmoud.mohamed@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Creator 7: Nour Elaraby -->
+                       <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/nour.jpeg"
+                                alt="Profile photo of Nour Elaraby"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user7">Nour Elaraby</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:nour.elaraby@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Nour Elaraby">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>nour.elaraby@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Creator 8: Mahmoud Abdelnabi -->
+
+                    <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/abdalnabi.jpeg"
+                                alt="Profile photo of Mahmoud Abdelnabi"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user8">Mahmoud Abdelnabi</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:mahmoud.abdelnabi@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Mahmoud Abdelnabi">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>mahmoud.abdelnabi@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Creator 9: Mohamed Emam -->
+                       <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/emam.jpeg"
+                                alt="Profile photo of Mohamed Emam"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user9">Mohamed Emam</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:mohamed.emam@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Mohamed Emam">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>mohamed.emam@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Creator 10: Ahmed Amer -->
+
+                      <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/ahmed.jpeg"
+                                alt="Profile photo of Ahmed Amer"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user10">Ahmed Amer</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:ahmed.amer@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Ahmed Amer">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>ahmed.amer@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Creator 11: Youssef Mohamed -->
+
+                      <article class="creator-card fade-in">
+                        <div class="creator-photo-wrapper">
+                            <img
+                                src="images/team/youssef.jpeg"
+                                alt="Profile photo of Youssef Mohamed"
+                                class="creator-photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="creator-photo-fallback" aria-hidden="true" style="display:none;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="creator-body">
+                            <span class="creator-badge" data-i18n="about.creatorBadge">Developer</span>
+                            <h4 class="creator-name" data-i18n="users.user11">Youssef Mohamed</h4>
+                            <p class="creator-desc" data-i18n="about.creator1Desc">
+                                Information system student , interested in the enviroment and promoting enviroment awareness
+                            </p>
+                            <div class="creator-meta">
+                                <a href="mailto:youssef.mohamed@gmail.com" class="creator-meta-item"
+                                   aria-label="Send email to Youssef Mohamed">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    <span>youssef.mohamed@gmail.com</span>
+                                </a>
+                                <div class="creator-meta-item">
+                                    <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                                    <span data-i18n="about.fieldCS">Information system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    
+                </div>
+            </div>
+            <div class="section-header fade-in">
+            </br>
+                <h2 class="section-title" id="contact-title" data-i18n="contact.title">Contact Us</h2>
+                <p class="creators-heading"/>
+
+                <p class="section-subtitle" data-i18n="contact.subtitle">Have questions or want to get involved? We would love to hear from you!</p>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- Contact Info Column -->
+                <div class="contact-info fade-in">
+                    <h3 data-i18n="contact.workTogetherTitle">Let's Work Together</h3>
+                    <p data-i18n="contact.workTogetherDesc">Join our mission to protect the environment. Whether you have questions, ideas, or want to volunteer, reach out to us and become part of the change.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <div>
+                                <h4 data-i18n="contact.locationLabel">Location</h4>
+                                <p data-i18n="contact.locationValue">Egypt, Cairo, El Mokattam</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <div>
+                                <h4 data-i18n="contact.emailLabel">Email</h4>
+                                <p>info@ecoaware.org</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <div>
+                                <h4 data-i18n="contact.phoneLabel">Phone</h4>
+                                <p>+20 01032733033</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="contact-form-container fade-in">
+                    <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="name"><span data-i18n="contact.form.nameLabel">Full Name</span> <span aria-hidden="true">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                                <input type="text" id="name" name="name"
+                                    placeholder="Enter your full name"
+                                    data-i18n-placeholder="contact.form.namePlaceholder"
+                                    autocomplete="name"
+                                    aria-required="true"
+                                    aria-describedby="nameError">
+                            </div>
+                            <span class="form-error" id="nameError" role="alert"></span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email"><span data-i18n="contact.form.emailLabel">Email Address</span> <span aria-hidden="true">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <input type="email" id="email" name="email"
+                                    placeholder="Enter your email address"
+                                    data-i18n-placeholder="contact.form.emailPlaceholder"
+                                    autocomplete="email"
+                                    aria-required="true"
+                                    aria-describedby="emailError">
+                            </div>
+                            <span class="form-error" id="emailError" role="alert"></span>
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div class="form-group">
+                            <label for="subject"><span data-i18n="contact.form.subjectLabel">Subject</span> <span aria-hidden="true">*</span></label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-tag" aria-hidden="true"></i>
+                                <select id="subject" name="subject"
+                                    aria-required="true"
+                                    aria-describedby="subjectError">
+                                    <option value="" data-i18n="contact.form.subjectPlaceholder">Select a subject</option>
+                                    <option value="volunteer" data-i18n="contact.form.subjectOption1">Volunteer Opportunities</option>
+                                    <option value="partnership" data-i18n="contact.form.subjectOption2">Partnership &amp; Sponsorship</option>
+                                    <option value="education" data-i18n="contact.form.subjectOption3">Education Programs</option>
+                                    <option value="donation" data-i18n="contact.form.subjectOption4">Donations</option>
+                                    <option value="other" data-i18n="contact.form.subjectOption5">Other</option>
+                                </select>
+                            </div>
+                            <span class="form-error" id="subjectError" role="alert"></span>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <label for="message"><span data-i18n="contact.form.messageLabel">Message</span> <span aria-hidden="true">*</span></label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment" aria-hidden="true"></i>
+                                <textarea id="message" name="message"
+                                    placeholder="Write your message here..."
+                                    data-i18n-placeholder="contact.form.messagePlaceholder"
+                                    rows="5"
+                                    aria-required="true"
+                                    aria-describedby="messageError"></textarea>
+                            </div>
+                            <span class="form-error" id="messageError" role="alert"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> <span data-i18n="contact.form.submit">Send Message</span>
+                        </button>
+
+                        <!-- Success Message (shown after valid submit) -->
+                        <div class="form-success" id="formSuccess" style="display:none;" role="status">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <p data-i18n="contact.form.successMsg">Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+         FOOTER
+         Brand, quick links, resources, newsletter, social, copyright
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo" aria-label="EcoAware Home">
+                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                        <span data-i18n="brand.name">EcoAware</span>
+                    </a>
+                    <p data-i18n="footer.brandDesc">Dedicated to raising environmental awareness and inspiring everyday action for a sustainable, thriving future for all life on Earth.</p>
+                    <div class="social-links" aria-label="Social media links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter / X"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-links">
+                    <h4 data-i18n="footer.quickLinksTitle">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.home">Home</span></a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.about">About</span></a></li>
+                        <li><a href="#problems"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.problems">Problems</span></a></li>
+                        <li><a href="#solutions"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.solutions">Solutions</span></a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.contact">Contact</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div class="footer-links">
+                    <h4 data-i18n="footer.resourcesTitle">Resources</h4>
+                    <ul>
+                        <li><a href="#tips"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="footer.linkTips">Eco Tips</span></a></li>
+                        <li><a href="#videos"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="nav.videos">Videos</span></a></li>
+                        <li><a href="#quiz"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="footer.linkQuiz">Take Quiz</span></a></li>
+                        <li><a href="#statistics"><i class="fas fa-chevron-right" aria-hidden="true"></i> <span data-i18n="footer.linkStats">Statistics</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-newsletter">
+                    <h4 data-i18n="footer.newsletterTitle">Stay Updated</h4>
+                    <p data-i18n="footer.newsletterDesc">Subscribe to our newsletter for the latest eco news, tips, and events delivered to your inbox.</p>
+                    <div class="newsletter-form">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email" data-i18n-placeholder="footer.newsletterPlaceholder" aria-label="Newsletter email address">
+                        <button type="button" class="btn btn-primary btn-sm" id="newsletterBtn" data-i18n="footer.newsletterBtn">Subscribe</button>
+                    </div>
+                    <p class="newsletter-msg" id="newsletterMsg"></p>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom">
+                <p><span data-i18n="footer.copyright">&copy; 2024 EcoAware. All rights reserved. Made with</span> <i class="fas fa-heart" aria-hidden="true"></i> <span data-i18n="footer.copyrightSuffix">for our planet.</span></p>
+                <nav class="footer-bottom-links" aria-label="Legal links">
+                    <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                    <a href="#" data-i18n="footer.terms">Terms of Service</a>
+                    <a href="#" data-i18n="footer.cookies">Cookie Policy</a>
+                </nav>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- ============================================================
+         SCROLL-TO-TOP BUTTON
+    ============================================================ -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+
+    <!-- Internationalisation (English / Arabic translations) -->
+    <script src="i18n.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
